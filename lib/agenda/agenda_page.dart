@@ -42,7 +42,7 @@ class AgendaPage extends StatelessWidget {
               ),
             ),
             Tab(
-              child: Text("Web & More"),
+              child: Text("Web & Más"),
               icon: Icon(
                 FontAwesomeIcons.chrome,
                 size: 12,

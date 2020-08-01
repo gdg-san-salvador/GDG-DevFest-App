@@ -43,7 +43,7 @@ class SessionList extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: allSessions[i].sessionStartTime,
-                    style: Theme.of(context).textTheme.subtitle.copyWith(
+                    style: Theme.of(context).textTheme.subtitle2.copyWith(
                           fontSize: 12,
                         ),
                   ),
@@ -65,7 +65,7 @@ class SessionList extends StatelessWidget {
                 children: [
                   TextSpan(
                       text: allSessions[i].speakerName,
-                      style: Theme.of(context).textTheme.subtitle.copyWith(
+                      style: Theme.of(context).textTheme.subtitle2.copyWith(
                             fontSize: 14,
                             color: Tools.multiColors[Random().nextInt(4)],
                           ),

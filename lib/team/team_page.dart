@@ -97,7 +97,7 @@ class TeamPage extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 teams[i].name,
-                                style: Theme.of(context).textTheme.title,
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                               SizedBox(
                                 height: 5,
@@ -115,7 +115,7 @@ class TeamPage extends StatelessWidget {
                           ),
                           Text(
                             teams[i].desc,
-                            style: Theme.of(context).textTheme.subtitle,
+                            style: Theme.of(context).textTheme.subtitle2,
                           ),
                           SizedBox(
                             height: 10,
@@ -134,7 +134,7 @@ class TeamPage extends StatelessWidget {
         },
         itemCount: teams.length,
       ),
-      title: "Team",
+      title: "Equipo Organizador",
     );
   }
 }

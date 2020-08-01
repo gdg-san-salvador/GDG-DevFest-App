@@ -13,26 +13,76 @@ class MapPage extends StatefulWidget {
 class _MapPageState extends State<MapPage> {
   GoogleMapController _controller;
   bool isMapCreated = false;
-  static final LatLng myLocation = LatLng(37.42796133580664, -122.085749655962);
+
+  static final LatLng mxLocation = LatLng(23.6260333, -102.5375005);
+  static final LatLng gtLocation = LatLng(15.7778664, -90.2299096);
+  static final LatLng svLocation = LatLng(13.8029939, -88.9053364);
+  static final LatLng crLocation = LatLng(9.6301892, -84.2541844);
+  static final LatLng boLocation = LatLng(-16.2837065, -63.5493965);
+  static final LatLng peLocation = LatLng(-9.1951786, -74.9904165);
+  static final LatLng arLocation = LatLng(-38.4192641, -63.5989206);
+  static final LatLng clLocation = LatLng(-36.739055, -71.0574941);
 
   @override
   void initState() {
     super.initState();
   }
 
-  final CameraPosition _kGooglePlex = CameraPosition(
-    target: myLocation,
-    zoom: 14.4746,
+  final CameraPosition _kLatam = CameraPosition(
+    target: peLocation,
+    zoom: 1,
   );
 
   Set<Marker> _createMarker() {
     return <Marker>[
       Marker(
-          markerId: MarkerId("marker_1"),
-          position: myLocation,
+          markerId: MarkerId("Mexico"),
+          position: mxLocation,
           icon: BitmapDescriptor.defaultMarkerWithHue(
             BitmapDescriptor.hueOrange,
           )),
+      Marker(
+          markerId: MarkerId("Guatemala"),
+          position: gtLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("El Salvador"),
+          position: svLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("Costa Rica"),
+          position: crLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("Peru"),
+          position: peLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("Bolivia"),
+          position: boLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("Argentina"),
+          position: arLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          )),
+      Marker(
+          markerId: MarkerId("Chile"),
+          position: clLocation,
+          icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueOrange,
+          ))
     ].toSet();
   }
 
@@ -69,7 +119,7 @@ class _MapPageState extends State<MapPage> {
               myLocationButtonEnabled: true,
               myLocationEnabled: true,
               markers: _createMarker(),
-              initialCameraPosition: _kGooglePlex,
+              initialCameraPosition: _kLatam,
               onMapCreated: (GoogleMapController controller) {
                 _controller = controller;
                 isMapCreated = true;
@@ -83,14 +133,14 @@ class _MapPageState extends State<MapPage> {
                   child: RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                        text: "Google Office\n",
-                        style: Theme.of(context).textTheme.title.copyWith(
+                        text: "DevFest 2020\n",
+                        style: Theme.of(context).textTheme.headline3.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                         children: [
                           TextSpan(
-                              text: "Shoreline Amphitheatre, Mountain View, CA",
-                              style: Theme.of(context).textTheme.subtitle,
+                              text: "¡Latinoamérica Unida!",
+                              style: Theme.of(context).textTheme.headline5,
                               children: []),
                         ]),
                   )),
@@ -98,7 +148,7 @@ class _MapPageState extends State<MapPage> {
           ],
         ),
       ),
-      title: "Locate Us",
+      title: "Mapa",
     );
   }
 }

@@ -10,10 +10,10 @@ class FindDevFestPage extends StatelessWidget {
     return DevScaffold(
       body: Container(
         child: Center(
-          child: Text("Coming Soon"),
+          child: Text("Próximamente..."),
         ),
       ),
-      title: "Find A DevFest",
+      title: "Conectate con DevFest 2020",
     );
   }
 }

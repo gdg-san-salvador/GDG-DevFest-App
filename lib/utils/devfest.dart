@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Devfest {
-  static const String app_name = "Devfest";
-  static const String app_version = "Version 1.0.4";
+  static const String app_name = "DevFest LATAM 2020";
+  static const String app_version = "Version 0.0.1";
   static const int app_version_code = 1;
   static const String app_color = "#ffd7167";
   static Color primaryAppColor = Colors.white;
@@ -37,33 +37,30 @@ class Devfest {
   static const String banner_dark = "assets/images/banner_dark.png";
 
   //*  Texts
-  static const String welcomeText = "Welcome to GDG DevFest";
-  static const String descText =
-      '''DevFests are community-led, developer events hosted by GDG chapters around the globe focused on community building & learning about Google’s technologies. Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.''';
+  static const String welcomeText = "Bienvenid@ a DevFest 2020";
+  static const String descText = '''Los DevFests son eventos para desarrolladores organizados por las comunidades llamadas Grupos de Desarrolladores de Google (GDGs) alrededor del mundo. Los GDG se enfocan en el desarrollo de la comunidad local aprendiendo tecnologías de Google y más.''';
 
-  static const String loading_text = "Loading...";
-  static const String try_again_text = "Try Again";
-  static const String some_error_text = "Some error";
-  static const String signInText = "Sign In";
-  static const String signInGoogleText = "Sign in with google";
-  static const String signOutText = "Sign Out";
-  static const String wrongText = "Something went wrong";
-  static const String confirmText = "Confirm";
-  static const String supportText = "Support Needed";
-  static const String featureText = "Feature Request";
-  static const String moreFeatureText = "More Features coming soon.";
-  static const String updateNowText =
-      "Please update your app for seamless experience.";
-  static const String checkNetText =
-      "It seems like your internet connection is not active.";
+  static const String loading_text = "Cargando...";
+  static const String try_again_text = "Intentalo de nuevo";
+  static const String some_error_text = "Ha ocurrido un error";
+  static const String signInText = "Registrarse";
+  static const String signInGoogleText = "Iniciar sesión con Google";
+  static const String signOutText = "Cerrar Sesión";
+  static const String wrongText = "Algo anda mal";
+  static const String confirmText = "Confirmar";
+  static const String supportText = "Ayuda";
+  static const String featureText = "Solicitar una Caracteristica";
+  static const String moreFeatureText = "Más sorpresas están en camino.";
+  static const String updateNowText = "Actualiza la app para una mejor experiencia.";
+  static const String checkNetText = "Parece que has perdido tu conexión a Internet.";
 
   //* ActionTexts
   static const String agenda_text = "Agenda";
   static const String speakers_text = "Speakers";
-  static const String team_text = "Team";
+  static const String team_text = "Equipo";
   static const String sponsor_text = "Sponsors";
-  static const String faq_text = "FAQ";
-  static const String map_text = "Locate Us";
+  static const String faq_text = "Preguntas Frecuentes";
+  static const String map_text = "Mapa";
 
   //* Preferences
   static SharedPreferences prefs;

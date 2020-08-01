@@ -10,10 +10,10 @@ class FaqPage extends StatelessWidget {
     return DevScaffold(
       body: Container(
         child: Center(
-          child: Text("Coming Soon"),
+          child: Text("Próximamente..."),
         ),
       ),
-      title: "FAQ",
+      title: "Preguntas Frecuentes",
     );
   }
 }

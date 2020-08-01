@@ -86,7 +86,7 @@ class SessionDetail extends StatelessWidget {
               Text(
                 "${session.speakerDesc}",
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.title.copyWith(
+                style: Theme.of(context).textTheme.headline6.copyWith(
                       fontSize: 14,
                       color: Tools.multiColors[Random().nextInt(4)],
                     ),
@@ -97,7 +97,7 @@ class SessionDetail extends StatelessWidget {
               Text(
                 "${session.sessionTitle}",
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.title.copyWith(
+                style: Theme.of(context).textTheme.headline6.copyWith(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
